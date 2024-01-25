@@ -1,0 +1,131 @@
+.each-restaruant-food-list-item {
+  width: 40%;
+  height: 30vh;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.each-food-item-image {
+  width: 255px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.item-details {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+.item-name {
+  color: var(--Light-blue-gray-700, #334155);
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.item-cost {
+  color: var(--Light-blue-gray-700, #334155);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.item-rating-container {
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 20px;
+}
+.item-rating {
+  color: #0a1f44;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 2px;
+}
+.add-button {
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #ffa412;
+  color: #ffa412;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  margin-top: 8px;
+  background-color: transparent;
+}
+
+.add-sub-button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.alter-buttons {
+  display: flex;
+  height: 18px;
+  width: 18px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.25px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.item-count-text {
+  color: var(--Light-blue-gray-600, #475569);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .each-restaruant-food-list-item {
+    width: 100%;
+    height: 20vh;
+   
+  }
+  .each-food-item-image {
+    width: 160px;
+    height: 100px;
+    border-radius: 5.02px;
+  }
+  .item-name {
+    font-size: 16px;
+    line-height: 14px; /* 150% */
+  }
+  .item-cost {
+    font-size: 14px;
+    line-height: 10px; /* 114.286% */
+  }
+  .item-details {
+    height: 160px;
+    flex-shrink: 0;
+    padding-top: 20px;
+  }
+  .item-rating-container {
+    height: 10px;
+  }
+  .add-button {
+    display: flex;
+    padding: 5.793px 11.586px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.793px;
+    border-radius: 5.793px;
+    border: 1.448px solid #ffa412;
+    font-size: 12px;
+  }
+}
